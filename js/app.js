@@ -13,6 +13,10 @@ const registerIndivisual = async(data) => {
   
 }
 
+function gotoForm(){
+  location.href = "/form.html"
+}
+
 // registerIndivisual({
 //   name:"Gunjan",
 //   regNo:"19BCE2642",

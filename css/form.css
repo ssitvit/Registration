@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 
-/* gradient used
-background: rgb(27,202,207);
-background: linear-gradient(135deg, rgba(27,202,207,1) 30%, rgba(26,200,137,1) 100%); */
-
 * {
   margin: 0;
   padding: 0;
@@ -15,16 +11,16 @@ background: linear-gradient(135deg, rgba(27,202,207,1) 30%, rgba(26,200,137,1) 1
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex: 2;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #323232;
 }
 
-.hero-title {
-  font-size: 3.6rem;
-  font-weight: 600;
+h1 {
   text-align: center;
-  margin: 0.5em 0.5em;
+  margin: 0 0.5em 0.5em;
+  font-size: 3rem;
 }
 
 .underline {
@@ -40,25 +36,29 @@ body {
   border-radius: 3px;
 }
 
-.hero {
-  display: flex;
-  margin: 1em;
-  text-align: center;
+form {
+  margin-top: 1em;
 }
 
-.hero h2 {
-  font-size: 1.8rem;
-  margin: 0.5em 0;
+input {
+  height: 2.8em;
+  padding: 0.4em;
+  font-size: 1rem;
+  color: #212121;
+  margin: 0.8em 0;
+  width: 100%;
+  border-radius: 4px;
 }
 
-.hero button {
+.submit {
   display: block;
+  margin: 1em auto;
   padding: 0.8em;
   width: 10em;
-  margin: 1.6em auto;
-  border: 3px solid #323232;
-  font-size: 1rem;
+  height: auto;
   font-weight: 600;
+  color: #fff;
+  border: 3px solid #323232;
   border-radius: 4px;
   background: rgb(27, 202, 207);
   background: linear-gradient(
@@ -69,27 +69,7 @@ body {
   transition: border 0.5s;
 }
 
-.hero button:hover {
+.submit:hover {
   border: 3px solid rgb(27, 202, 207);
   background: none;
-}
-
-.hero p {
-  font-size: 90%;
-  width: 70%;
-  margin: auto;
-}
-
-.hero div {
-  margin: 1em 0;
-}
-
-/* media queries */
-@media only screen and (max-width: 728px) {
-  body {
-    height: auto;
-  }
-  .hero {
-    flex-direction: column;
-  }
 }
