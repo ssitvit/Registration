@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+/* gradient used
+background: rgb(27,202,207);
+background: linear-gradient(135deg, rgba(27,202,207,1) 30%, rgba(26,200,137,1) 100%); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323232;
+}
+
+.hero-title {
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0.5em 0.5em;
+}
+
+.underline {
+  height: 6px;
+  width: 50%;
+  background: rgb(27, 202, 207);
+  background: linear-gradient(
+    135deg,
+    rgba(27, 202, 207, 1) 30%,
+    rgba(26, 200, 137, 1) 100%
+  );
+  margin: auto;
+  border-radius: 3px;
+}
+
+.hero {
+  display: flex;
+  margin: 1em;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin: 0.5em 0;
+}
+
+.hero button {
+  display: block;
+  padding: 0.8em;
+  width: 10em;
+  margin: 1.6em auto;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  background: rgb(27, 202, 207);
+  background: linear-gradient(
+    135deg,
+    rgba(27, 202, 207, 1) 30%,
+    rgba(26, 200, 137, 1) 100%
+  );
+}
+
+.hero p {
+  font-size: 90%;
+  width: 70%;
+  margin: auto;
+}
+
+.hero div {
+  margin: 1em 0;
+}
+
+/* media queries */
+@media only screen and (max-width: 728px) {
+  body {
+    height: auto;
+  }
+  .hero {
+    flex-direction: column;
+  }
+}
