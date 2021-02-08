@@ -11,13 +11,25 @@
   <div class="container">
     <h1>Register</h1>
     <div class="underline"></div>
-    <form>
-      <input type="text" placeholder="Name" required><br>
-      <input type="text" placeholder="Registration No." required><br>
-      <input type="email" placeholder="Email" required><br>
-      <input type="tel" placeholder="Phone" required><br>
+    <form id="form">
+      <input id="name" type="text" placeholder="Name" required><br>
+      <input id="regno" type="text" placeholder="Registration No." required><br>
+      <input id="email" type="email" placeholder="Email" required><br>
+      <input id="phone" type="tel" placeholder="Phone" required><br>
       <input class="submit" type="submit" value="Submit">
     </form>
   </div>
 </body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
+
+<script src="./js/firebaseSetup.js"></script>
+
+<script src="./js/app.js"></script>
 </html>

@@ -22,7 +22,7 @@ body {
 
 .container h1 {
   font-size: 3rem;
-  margin: 0 0.5em 0.5em;
+  margin: 0.5em;
 }
 
 .underline {
@@ -39,5 +39,15 @@ body {
 }
 
 .container p {
+  max-width: 400px;
   margin: 2em 1em;
+  line-height: 1.5em;
+}
+
+#color1 {
+  stop-color: rgba(27, 202, 207, 1);
+}
+
+#color2 {
+  stop-color: rgba(26, 200, 137, 1);
 }
