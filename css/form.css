@@ -26,12 +26,8 @@ h1 {
 .underline {
   height: 6px;
   width: 50%;
-  background: rgb(27, 202, 207);
-  background: linear-gradient(
-    135deg,
-    rgba(27, 202, 207, 1) 30%,
-    rgba(26, 200, 137, 1) 100%
-  );
+  background: var(--red);
+  background: linear-gradient(135deg, var(--red) 30%, var(--pink) 100%);
   margin: auto;
   border-radius: 3px;
 }
@@ -52,7 +48,7 @@ input {
 
 input:focus {
   outline: none;
-  box-shadow: 0px 0px 8px 0px rgb(27, 202, 207);
+  box-shadow: 0px 0px 8px 0px var(--red);
 }
 
 .submit {
@@ -63,18 +59,14 @@ input:focus {
   height: auto;
   font-weight: 600;
   color: #fff;
-  border: 3px solid #323232;
+  border: 3px solid var(--dark);
   border-radius: 4px;
-  background: rgb(27, 202, 207);
-  background: linear-gradient(
-    135deg,
-    rgba(27, 202, 207, 1) 30%,
-    rgba(26, 200, 137, 1) 100%
-  );
+  background: var(--red);
+  background: linear-gradient(135deg, var(--red) 30%, var(--pink) 100%);
   transition: border 0.5s;
 }
 
 .submit:hover {
-  border: 3px solid rgb(27, 202, 207);
+  border: 3px solid var(--red);
   background: none;
 }
