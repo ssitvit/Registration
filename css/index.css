@@ -20,11 +20,17 @@ body {
   background-color: #323232;
 }
 
-.hero-title {
+/* .hero-title {
   font-size: 3.6rem;
   font-weight: 600;
   text-align: center;
   margin: 0.5em 0.5em;
+} */
+
+.hero-title {
+  width: 60%;
+  display: block;
+  margin: 0 auto -0.5em;
 }
 
 .underline {
@@ -38,6 +44,7 @@ body {
 
 .hero {
   display: flex;
+  justify-content: center;
   margin: 1em;
   text-align: center;
 }
@@ -75,4 +82,11 @@ body {
 
 .hero div {
   margin: 1em 0;
+}
+
+/* media queries */
+@media only screen and (max-width: 728px) {
+  .hero-title {
+    width: 100%;
+  }
 }
